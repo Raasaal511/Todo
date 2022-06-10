@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+{% include 'task/add_task.html' %}
+
+<div>
+
+{% for task in tasks %}
+    {{ task }}
+{% endfor %}
+
+</div>
+
+
 </body>
 </html>
